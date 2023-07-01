@@ -1,18 +1,21 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
  * main - prints uppercase alphabets followed by lowcase
  * Return: 0 on successful compilation
  */
 int main(void)
 {
-int ch;
-for (ch = 'A'; ch <= 'Z'; ch++)
-putchar(ch);
-putchar('\n');
-for (ch = 'a'; ch <= 'z'; ch++)
-putchar(ch);
-putchar('\n');
-return (0);
+char var;
+putchar('\');
+var = getchar();
+if(islower(var))
+{
+putchar(toupper(var));
 }
-
-
+else
+{
+putchar(tolower(var));
+}
+return 0;
+}
