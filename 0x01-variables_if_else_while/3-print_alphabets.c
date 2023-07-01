@@ -9,7 +9,7 @@ int main(void)
 char var;
 putchar('\n');
 var = getchar();
-if(islower(var))
+if (islower(var))
 {
 putchar(toupper(var));
 }
@@ -17,5 +17,5 @@ else
 {
 putchar(tolower(var));
 }
-return 0;
+return (0);
 }
