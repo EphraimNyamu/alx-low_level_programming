@@ -7,7 +7,7 @@
 int main(void)
 {
 char var;
-putchar('\');
+putchar('\n');
 var = getchar();
 if(islower(var))
 {
