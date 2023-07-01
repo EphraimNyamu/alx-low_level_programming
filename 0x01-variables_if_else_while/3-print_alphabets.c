@@ -5,19 +5,11 @@
  */
 int main(void)
 {
-char c;
-char d;
-c = 'a';
-d = 'A';
-while (c <= 'z')
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int i;
+for (i = 0; i < 52; i++)
 {
-putchar (c);
-c++;
-}
-while (d <= 'z')
-{
-putchar (d);
-d++;
+putchar(alp[i]);
 }
 putchar("\n");
 return (0);
