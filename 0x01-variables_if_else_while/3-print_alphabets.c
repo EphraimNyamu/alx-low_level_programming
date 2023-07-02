@@ -7,7 +7,6 @@
 int main(void)
 {
 char var;
-putchar('\n');
 var = getchar();
 if (islower(var))
 {
@@ -17,5 +16,6 @@ else
 {
 putchar(tolower(var));
 }
+putchar('\n');
 return (0);
 }
