@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-char var[52] ;
-var[52] = getchar();
+char var[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 if (islower(var[52]))
 {
 putchar(toupper(var[52]));
