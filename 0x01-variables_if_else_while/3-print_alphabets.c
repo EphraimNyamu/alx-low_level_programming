@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-char var[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-if (islower(var[52]))
+char c;
+char d;
+for (c = 'a'; c <= 'z'; c++)
 {
-putchar(toupper(var[52]));
+putchar(c);
 }
-else
+for (d = 'A'; d <= 'Z'; d++)
 {
-putchar(tolower(var[52]));
+putchar(d);
 }
 putchar('\n');
 return (0);
