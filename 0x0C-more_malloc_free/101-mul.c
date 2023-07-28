@@ -1,9 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 #define ERR_MSG "Error"
-
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
@@ -12,17 +10,15 @@
  */
 int is_digit(char *s)
 {
-	int i = 0;
-
-	while (s[i])
-	{
-		if (s[i] < '0' || s[i] > '9')
-			return (0);
-		i++;
-	}
-	return (1);
+int i = 0;
+while (s[i])
+{
+if (s[i] < '0' || s[i] > '9')
+return (0);
+i++;
 }
-
+return (1);
+}
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -31,24 +27,21 @@ int is_digit(char *s)
  */
 int _strlen(char *s)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+int i = 0;
+while (s[i] != '\0')
+{
+i++;
 }
-
+return (i);
+}
 /**
  * errors - handles errors for main
  */
 void errors(void)
 {
-	printf("Error\n");
-	exit(98);
+printf("Error\n");
+exit(98);
 }
-
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
@@ -85,7 +78,7 @@ carry /= 10;
 if (carry > 0)
 result[len1 + len2 + 1] += carry;
 }
-for (i = 0; i < len - 1; i++)
+for (i = 0; i < len -1; i++)
 {
 if (result[i])
 a = 1;
